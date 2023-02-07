@@ -18,9 +18,8 @@ const ProductItem = ({item}) => {
             alt="product"
             className='item-image' />
             <div className="item-name" onClick={goToDetail}>{item.product_name}</div>
-            <div className="item-price">₩ {item.price}</div>
+            <div className="item-price">{item.price}원</div>
             <button className='add-cart-btn' onClick={()=>dispatch(addCart(item))}>
-                <i className="fas fa-plus"></i>
                 장바구니에 담기
             </button>
 

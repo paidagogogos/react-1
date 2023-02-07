@@ -4,5 +4,23 @@
   font-family: Pretendard;
 }
 
+@font-face {
+  font-family: 'KOTRA_BOLD-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SLEIGothicTTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SLEIGothicTTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'SLEIGothicTTF';
+}
+
 *{margin: 0;padding: 0;}
 a{text-decoration: none;color:inherit;}
