@@ -1,23 +1,30 @@
 import React from 'react';
 import "./ProductList.css";
-import {useState, useEffect } from "react";
+import { useEffect } from "react";
 import ProductItem from "./ProductItem"
-import counterSlice from '../store/counter/counterSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { getProduct } from '../store/product/productSlice';
 
 const ProductList= () => {
-    const [products, setProducts] = useState([]);
+    const dispatch = useDispatch();
+    const products = useSelector((state) => state.product.value)
+
+
+    console.log(products)   
+
 
     useEffect(()=>{
-        getProductData();
+        dispatch(getProduct());
     },[])
+
     return (
         <div className="product-list">
              <h2 className="product-list-title">상품 목록</h2>
              <div className="product-item-container">
                 {
-                    products && products.map(item=>{
-                        return <ProductItem key={item.id} item={item} />
-                    })
+                        products.map(item=>{
+                            return <ProductItem key={item.id} item={item} />
+                        })
                 }
              </div>
         </div>

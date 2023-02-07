@@ -1,12 +1,11 @@
 import axios from "axios";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { get } from "immer/dist/internal";
 
 export const getProduct = createAsyncThunk(
     "GET_PRODUCT",
     async () => {
         try {
-            const res = await axios.get('htt[://localhost:3004/productList')
+            const res = await axios.get('http://localhost:3004/productList')
             return res.data;
         } catch(err) {
             console.log(err);
