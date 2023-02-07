@@ -8,7 +8,7 @@ const ProductItem = ({item}) => {
     const dispatch=useDispatch();
     const navigate = useNavigate();
     const goToDetail = () => {
-        navigate(`/proudct/${item.id}`)
+        navigate(`/product/${item.id}`)
     }
 
     return (

@@ -2,7 +2,8 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit'
 //import counterSlice from './counter/counterSlice'
 import userSlice from './user/userSlice'
 import cartSlice from './cart/cartSlice'
-import productSlice from './product/productSlice'
+import productSlice from "./product/productSlice";
+
 import { persistStore, persistReducer } from 'reduxjs-toolkit-persist'
  //persistReducer 리듀서가 실행될때 persist 를 같이 사용하게 묶어서 사용
 import storage from 'reduxjs-toolkit-persist/lib/storage' 
