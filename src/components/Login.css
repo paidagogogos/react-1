@@ -1,7 +1,40 @@
-* {
-    align-items: center;
-    display: flex;
-    width: 1200px;
+.login-box{
+    width: 960px;
     margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 200px;
+}
+
+.textId, .textPw {
+    width: 400px;
+    height: 15x;
+    margin-bottom: 20px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+h2 {
     text-align: center;
+    padding-bottom: 40px;
+}
+
+.loginBtn {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.loginButton {
+    width: 432px;
+    height: 45px;
+    border: none;
+    background-color: #4a83ef;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
 }

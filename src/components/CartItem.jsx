@@ -15,7 +15,7 @@ const CartItem = ({item}) => {
             className="cart-item-img"
             />
             <span className="cart-item-name">{item.product_name}</span>
-            <span className="cart-item-price">{item.price}</span>
+            <span className="cart-item-price">{item.price}원</span>
             <i className="fas fa-trash-alt" onClick={()=>dispatch(deleteCart(restItem))}></i>
            
         </div>
