@@ -9,4 +9,14 @@
 .product-list-title{
     text-align: center;
     margin-bottom: 24px;
+    font-size: 40px;
+}
+
+.product-list-subtitle {
+    text-align: center;
+    color: #797979;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: -15px;
 }

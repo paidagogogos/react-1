@@ -18,7 +18,8 @@ const ProductList= () => {
 
     return (
         <div className="product-list">
-             <h2 className="product-list-title">상품 목록</h2>
+             <h2 className="product-list-title">오늘의 상품 목록</h2>
+             <h4 className="product-list-subtitle">천천히 둘러보세요</h4>
              <div className="product-item-container">
                 {
                      products.map(item=>{
