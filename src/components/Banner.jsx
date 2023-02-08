@@ -43,7 +43,12 @@ export default Banner;
 
 const BannerSlider = styled.div`
     margin-top: -50px;
-    width: 100%;
+    width: 100vw;
+
+    & img {
+        width: 100vw;
+    }
+
     & .pagination-box{
         display: flex;
         justify-content: center;

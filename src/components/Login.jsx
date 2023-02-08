@@ -16,7 +16,7 @@ const Login = () => {
     return (
         <div className='login-box'>
             <form onSubmit={(e)=>loginUser(e)}>
-                <h2>로그인</h2>
+                <h2>Charted 로그인</h2>
                 <div className='userId'>
                     <div><label htmlFor='userId'></label></div>
                     <div><input className='textId' type="text" id="userId"  placeholder='아이디를 입력해주세요' /></div>
