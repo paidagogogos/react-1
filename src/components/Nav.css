@@ -93,7 +93,7 @@ h1:hover:after { transform: scaleX(1.05); }
 }
 
 .search-box input[type="text"]{
-    width: 100%;
+    width: 90%;
     height: 45px;
     padding: 0 16px;
     border-radius: 7px;
