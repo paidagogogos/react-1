@@ -13,7 +13,8 @@
 .item-image:hover {
   transform:scale(1.02);           
   transition: transform .2s; 	
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 7px 7px rgba(0,0,0,0.05);
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+  transition: all 0.3s
 }
 
   .item-name {
@@ -49,6 +50,7 @@
     background-color: #f0f2f5;
     color: #373f49;
     font-weight: 500;
+    transition: all 0.2s
 }
 
 .add-cart-btn:hover {

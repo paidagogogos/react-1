@@ -14,44 +14,34 @@
     z-index: 50000;
     position: relative;
 }
-
 .nav:hover {
+    background-size: 100% 100%;
     box-shadow: 0 14px 28px rgba(0,0,0,0.07), 0 7px 7px rgba(0,0,0,0.1);
 }
 
-h1 {
+.underline {
+    font-weight: 700;
+    font-size: 40px;
+    background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.4s;
     color: #000;
-    display:inline-block; 
-    margin:0;
-}
-
-h1::after {
-    display:block;
-    content: '';
-    border-bottom: solid 5px #ea2129;  
-    border-radius: 75%;
-    transform: scaleX(0);  
-    transition: transform 200ms ease-in-out;
-}
-
-h1:hover:after { transform: scaleX(1.05); }
-
-.nav-title {
-    position: relative;
-    cursor: pointer;
-    font-size: 35px;
-    color: #000000;
     letter-spacing: -0.9px;
-}
+    cursor: pointer;
+  }
 
-.user-box {
-}
-
-.nav-title:after{  transform-origin:  0% 50%; }
+  .underline.yellow {
+    background-image: linear-gradient(transparent 60%, #F8CD07 40%);
+  }
+  .underline:hover {
+    background-size: 100% 100%;
+  }
 
 .fas.fa-shopping-cart {
     margin-right: 40px;
     color: #373f49;
+    transition: all 0.2s
 }
 
 .fas.fa-shopping-cart:hover {
@@ -60,6 +50,11 @@ h1:hover:after { transform: scaleX(1.05); }
 
 .fas.fa-user{
     color: #373f49;
+    transition: all 0.2s
+}
+
+.fas.fa-user:hover{
+    color: #1d7ecc;
 }
 
 .user {
