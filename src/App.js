@@ -13,7 +13,6 @@ function App() {
     <div className="App">  
       <BrowserRouter>
       <Nav />
-      <Banner />
       <Routes>
         <Route path="/" element={<ProductList />} />
         <Route path="/cart" element={<CartList />} />
