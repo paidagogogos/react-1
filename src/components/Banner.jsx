@@ -58,13 +58,16 @@ const BannerSlider = styled.div`
     & .pagination-box .swiper-pagination-bullet {
         width: 5px;
         height: 5px;
-        opacity: 0.9;
+        opacity: 0.6;
+        background-color : #fff;
         border: 2px solid transparent;
         font-size: 0px;
-        margin-top: 15px;
+        margin-top: -30px;
+        z-index: 50000;
     }
 
     & .pagination-box .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        border: 2px solid #007aff;
+        border: 2px solid transparent;
+        background-color: #d6d6d6;
     }
 `
