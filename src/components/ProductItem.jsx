@@ -17,7 +17,7 @@ const ProductItem = ({item}) => {
             src={item.product_img}
             alt="product"
             className='item-image' />
-            <div className="item-name" onClick={goToDetail}>{item.product_name}</div>
+            <div className="item-name">{item.product_name}</div>
             <div className="item-price">{item.price}원</div>
             <button className='add-cart-btn' onClick={()=>dispatch(addCart(item))}>
                 장바구니에 담기

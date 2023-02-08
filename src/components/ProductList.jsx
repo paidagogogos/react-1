@@ -22,7 +22,7 @@ const ProductList= () => {
              <h4 className="product-list-subtitle">브랜드 셋업을 추천드려요</h4>
              <div className="product-item-container">
                 {
-                    '' || products.map(item=>{
+                    products && products.map(item=>{
                         return <ProductItem key={item.id} item={item} />
                     })
                 }

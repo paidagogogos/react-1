@@ -7,6 +7,7 @@ export const getProduct = createAsyncThunk(
         try{
             // `https://my-json-server.typicode.com/paidagogogos/react-1/productList?q=${keyword}`
             // `/data/db.json/productList?q=${keyword}`	
+            // `/db.json/productList?q=${keyword}`
             const res = await axios.get(`https://my-json-server.typicode.com/paidagogogos/react-1/productList?q=${keyword}`);
             return res.data;
         }catch(err){
