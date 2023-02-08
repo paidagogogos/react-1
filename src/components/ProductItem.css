@@ -24,6 +24,9 @@
     color:#494949;
     margin-left: 1px;
     text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
   }
   .item-price {
     margin-bottom: 15px;

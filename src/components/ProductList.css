@@ -1,9 +1,8 @@
 .product-item-container{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    margin-left: 6vw;
-    margin-right: 6vw;
     text-align: left;
 }
 
