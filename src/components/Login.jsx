@@ -16,14 +16,15 @@ const Login = () => {
     return (
         <div className='login-box'>
             <form onSubmit={(e)=>loginUser(e)}>
-                <h2>Charted 로그인</h2>
+                <h2>Welcome Back</h2>
                 <div className='userId'>
                     <div><label htmlFor='userId'></label></div>
                     <div><input className='textId' type="text" id="userId"  placeholder='아이디를 입력해주세요' /></div>
                 </div>
                 <div className='userPw'>
-                     <div><label htmlFor='userPass'></label></div>
+                    <div><label htmlFor='userPass'></label></div>
                     <div><input className='textPw' type="password" id="userPass"  placeholder='비밀번호를 입력해주세요' /></div>
+                    <div><h4 className='forgotPass'>비밀번호를 잊으셨나요?</h4></div>
                 </div>
                 <div className='loginBtn'>
                      <input className='loginButton' type="submit" value="로그인"  />

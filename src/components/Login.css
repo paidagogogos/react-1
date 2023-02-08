@@ -12,16 +12,24 @@
 
 .textId, .textPw {
     width: 400px;
-    height: 15x;
-    margin-bottom: 20px;
+    height: 15px;
+    margin-bottom: 15px;
     border: 1px solid #d6d6d6;
     border-radius: 5px;
     padding: 15px;
 }
 
+.forgotPass {
+    padding-bottom: 40px;
+    padding-left: 5px;
+    font-weight: 600;
+    color: #4a73ef;
+}
+
 h2 {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
+    font-size: 40px;
 }
 
 .loginBtn {

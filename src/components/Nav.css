@@ -4,7 +4,7 @@
     align-items: center;
     height: 80px;
     margin-bottom: 50px;
-    padding: 0 150px;
+    padding: 0 70px;
     background-color: #fff;
     color: #fff;
     font-size: 20px;
@@ -16,22 +16,49 @@
 }
 
 .nav:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.07), 0 7px 7px rgba(0,0,0,0.1);
 }
 
 h1 {
-    font-family: 'SLEIGothicTTF';
+    color: #000;
+    display:inline-block; 
+    margin:0;
 }
 
+h1::after {
+    display:block;
+    content: '';
+    border-bottom: solid 5px #ea2129;  
+    border-radius: 75%;
+    transform: scaleX(0);  
+    transition: transform 200ms ease-in-out;
+}
+
+h1:hover:after { transform: scaleX(1.05); }
+
 .nav-title {
+    position: relative;
     cursor: pointer;
     font-size: 35px;
-    color: #373f49;
+    color: #000000;
     letter-spacing: -0.9px;
 }
 
+.user-box {
+}
+
+.nav-title:after{  transform-origin:  0% 50%; }
+
 .fas.fa-shopping-cart {
     margin-right: 40px;
+    color: #373f49;
+}
+
+.fas.fa-shopping-cart:hover {
+    color: #1d7ecc;
+}
+
+.fas.fa-user{
     color: #373f49;
 }
 

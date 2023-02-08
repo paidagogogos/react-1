@@ -6,9 +6,9 @@
 
 .cart-list-title{
     padding: 20px 0;
-    border-bottom: 1px solid #d6d6d6;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
+    font-size: 40px;
 }
 
 .cart-empty {
