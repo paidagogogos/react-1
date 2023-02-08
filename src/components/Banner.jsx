@@ -47,6 +47,7 @@ const BannerSlider = styled.div`
 
     & img {
         width: 100vw;
+        height: 19.47vw;
     }
 
     & .pagination-box{
