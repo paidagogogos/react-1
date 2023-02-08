@@ -52,7 +52,7 @@ const BannerSlider = styled.div`
     & .pagination-box{
         display: flex;
         justify-content: center;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
     }
 
     & .pagination-box .swiper-pagination-bullet {
