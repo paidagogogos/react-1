@@ -1,9 +1,10 @@
 .product-item{
     margin:0 10px 50px;
 }
+
 .item-image {
-    width: 20vw;
-    height: 25vw;
+  width: 20vw;
+  height: 25vw;
     margin-bottom: 5px;
     object-fit:cover;
     transform:scale(1.0);        
@@ -17,7 +18,8 @@
   transition: all 0.3s
 }
 
-  .item-name {
+.item-name {
+    width: 20vw;
     margin: 5px 0;
     font-size: 17px;
     font-weight:500;
@@ -28,7 +30,8 @@
     overflow: hidden;
     display: block;
     white-space: nowrap;
-  }
+}
+
   .item-price {
     margin-bottom: 15px;
     font-size: 16px;
@@ -36,6 +39,7 @@
     color: #000000;
     margin-left: 1px;
   }
+  
   .add-cart-btn{
     cursor: pointer;
     display: flex;

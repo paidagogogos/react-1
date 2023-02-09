@@ -4,7 +4,7 @@
     align-items: center;
     height: 80px;
     margin-bottom: 50px;
-    padding: 0 70px;
+    padding: 0 5vw;
     background-color: #fff;
     color: #fff;
     font-size: 20px;
@@ -21,7 +21,7 @@
 
 .underline {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
     background-repeat: no-repeat;
     background-size: 0% 100%;
@@ -38,8 +38,17 @@
     background-size: 100% 100%;
   }
 
+.box {
+    width: 15vw;
+}
+
+.user-box {
+    width: 5vw;
+    padding-left: 5vw;
+}
+
 .fas.fa-shopping-cart {
-    margin-right: 40px;
+    margin-right: 2vw;
     color: #373f49;
     transition: all 0.2s
 }
@@ -48,9 +57,23 @@
     color: #1d7ecc;
 }
 
+.fas.fa-sign-out-alt {
+    color: #373f49;
+    transition: all 0.2s
+}
+
+.fas.fa-sign-out-alt:hover {
+    color: #1d7ecc;
+}
+
 .fas.fa-user{
     color: #373f49;
     transition: all 0.2s
+}
+
+.fa-search {
+    z-index: 70000;
+    margin-left: -2.5vw;
 }
 
 .fas.fa-user:hover{
@@ -64,8 +87,14 @@
 }
 
 .fas{
+    color: #373f49;
+    transition: all 0.2s;
     position: relative;
     cursor: pointer;
+}
+
+.fas:hover {
+    color: #1d7ecc;
 }
 
 .cart-amount {
@@ -83,12 +112,14 @@
     justify-content: center;
     align-items: center; 
 }
+
 .search-box{ 
-    flex:0 1 50%;
+    padding-left: 0vw;
 }
 
 .search-box input[type="text"]{
-    width: 90%;
+    position: relative;
+    width: 59vw;
     height: 45px;
     padding: 0 16px;
     border-radius: 7px;

@@ -3,9 +3,14 @@ import "./Nav.css";
 import { useSelector ,useDispatch } from "react-redux";
 import {Link,useNavigate} from 'react-router-dom';
 import { logout } from './../store/user/userSlice';
+import { ReactDOM } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+
+
 const Nav = () => {    
-    const cart=useSelector(state=>state.cart)
-    const user= useSelector(state=>state.user.value)
+    const cart = useSelector(state=>state.cart)
+    const user = useSelector(state=>state.user.value)
     const dispatch = useDispatch();
     const navigate= useNavigate();
     const onSearch = (e) => {
@@ -23,16 +28,18 @@ const Nav = () => {
             </div>
             <div className='user-box'>
                 <span>
-                    <Link to='/cart'>
-                    <i className="fas fa-shopping-cart">
-                        <div className='cart-amount'>{cart.length}</div>
-                    </i>
-                    </Link>
+                        <Link to='/cart'>
+                            <i className="fas fa-shopping-cart">
+                                {
+                                    cart.length === 0 ? <div style={{display: "none"}}></div> : <div className='cart-amount'>{cart.length}</div>
+                                }
+                            </i>
+                        </Link>
                 </span>
                     {
                          user ? 
-                         <i className="fas fa-user" onClick={()=>{dispatch(logout(false))}}></i> :
-                         <i className="fas fa-user" onClick={()=>navigate('/login')}></i> 
+                         <i className="fas fa-sign-out-alt" onClick={()=>{dispatch(logout(false))}}></i> :
+                         <i className="fas fa-user" onClick={()=>navigate('/login')}></i>
                     }
             </div>
         </nav>
