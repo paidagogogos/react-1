@@ -1,0 +1,5 @@
+@media screen and (max-width:640px)  {
+    .slide01 {src: "./img/slide/slide01_s.png";}
+    .slide02 {src: "./img/slide/slide02_s.png";}
+    .slide03 {src: "./img/slide/slide03_s.png";}
+}    
