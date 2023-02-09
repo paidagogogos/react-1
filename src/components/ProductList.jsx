@@ -7,6 +7,7 @@ import {getProduct} from './../store/product/productSlice';
 import { useSearchParams } from "react-router-dom";
 import Banner from './Banner';
 import Footer from './Footer';
+import Nav from './Nav';
 
 const ProductList= () => {
     const [query, setQuery] = useSearchParams();
@@ -20,6 +21,7 @@ const ProductList= () => {
 
     return (
         <div className="product-list">
+            <Nav />
             <Banner />
             <h2 className="product-list-title">오늘의 스타일</h2>
             <h4 className="product-list-subtitle">브랜드 셋업을 추천드려요</h4>

@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">  
       <BrowserRouter>
-      <Nav />
       <Routes>
         <Route path="/" element={<ProductList />} />
         <Route path="/cart" element={<CartList />} />
