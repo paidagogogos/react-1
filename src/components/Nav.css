@@ -38,17 +38,10 @@
     background-size: 100% 100%;
   }
 
-.box {
-    width: 15vw;
-}
-
-.user-box {
-    width: 5vw;
-    padding-left: 5vw;
-}
 
 .fas.fa-shopping-cart {
-    margin-right: 2vw;
+    padding-left: 2.5vw;
+    margin-right: 2.5vw;
     color: #373f49;
     transition: all 0.2s
 }
@@ -69,11 +62,6 @@
 .fas.fa-user{
     color: #373f49;
     transition: all 0.2s
-}
-
-.fa-search {
-    z-index: 70000;
-    margin-left: -2.5vw;
 }
 
 .fas.fa-user:hover{
@@ -114,12 +102,12 @@
 }
 
 .search-box{ 
-    padding-left: 0vw;
+    padding-left: 3vw;
 }
 
 .search-box input[type="text"]{
     position: relative;
-    width: 59vw;
+    width: 45vw;
     height: 45px;
     padding: 0 16px;
     border-radius: 7px;
