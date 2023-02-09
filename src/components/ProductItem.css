@@ -16,8 +16,7 @@
 @media screen and (max-width:640px) {
   .item-image {width:40vw;height: 50vw;}
   .product-item {margin:0 3vw 10vh;}
-  .item-name {width: 70vw; text-overflow:clip;}
-  
+  .item-name {width: 400px;}
 }
 
 .item-image:hover {
