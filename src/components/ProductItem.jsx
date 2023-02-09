@@ -3,6 +3,8 @@ import "./ProductItem.css";
 import { useDispatch } from "react-redux";
 import { addCart } from '../store/cart/cartSlice';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+
 
 const ProductItem = ({item}) => {
     const dispatch=useDispatch();
@@ -19,7 +21,9 @@ const ProductItem = ({item}) => {
             className='item-image' />
             <div className="item-name">{item.product_name}</div>
             <div className="item-price">{item.price}원</div>
-            <button className='add-cart-btn' onClick={()=>dispatch(addCart(item))}>
+            <button className='add-cart-btn' onClick={()=>{
+                dispatch(addCart(item))
+                }}>
                 장바구니에 담기
             </button>
 
