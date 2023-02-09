@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {getProduct} from './../store/product/productSlice';
 import { useSearchParams } from "react-router-dom";
 import Banner from './Banner';
+import Footer from './Footer';
 
 const ProductList= () => {
     const [query, setQuery] = useSearchParams();
@@ -29,6 +30,7 @@ const ProductList= () => {
                     })
                 }
              </div>
+            <Footer />
         </div>
 
 

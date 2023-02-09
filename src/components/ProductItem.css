@@ -4,6 +4,7 @@
 
 
 .item-image {
+  cursor: pointer;
   width: 20vw;
   height: 25vw;
   border-radius: 0.3rem;

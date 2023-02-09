@@ -3,11 +3,9 @@ import "./ProductItem.css";
 import { useDispatch } from "react-redux";
 import { addCart } from '../store/cart/cartSlice';
 import { useNavigate } from 'react-router-dom';
-import Swal from 'sweetalert2';
-
 
 const ProductItem = ({item}) => {
-    const dispatch=useDispatch();
+    const dispatch = useDispatch();
     const navigate = useNavigate();
     const goToDetail = () => {
         navigate(`/product/${item.id}`)
@@ -18,8 +16,9 @@ const ProductItem = ({item}) => {
             <img 
             src={item.product_img}
             alt="product"
-            className='item-image' />
-            <div className="item-name">{item.product_name}</div>
+            className='item-image'
+            onClick={goToDetail} />
+            <div className="item-name" onClick={goToDetail}>{item.product_name}</div>
             <div className="item-price">{item.price}원</div>
             <button className='add-cart-btn' onClick={()=>{
                 dispatch(addCart(item))

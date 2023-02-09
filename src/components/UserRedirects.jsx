@@ -8,7 +8,7 @@ const UserRedirects = () => {
     return (
         <div>
             { 
-            user  === true ? 
+            user === true ? 
             <Detail /> :
             <Navigate to="/login" />
             }

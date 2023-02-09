@@ -1,0 +1,59 @@
+.detail-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.detail-title {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.detail-description {
+    padding-top: 0.5rem;
+    font-weight: 400;
+}
+
+.card {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-top: 4rem;
+    width: 25vw;
+    transform:scale(1.0);        
+    transform: rotate(0deg);  
+      transition: transform .5s; 
+}
+  
+.card:hover {
+    transform: scale(1.1);   
+    transform: rotate(-10deg);   
+    transition: transform .2s; 	
+    transition: all 0.3s
+}
+
+.buyBtn {
+    width: 25vw;
+    height: 45px;
+    border: none;
+    background-color: #4a83ef;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width:640px) {
+    .buyBtn {
+        width: 50vw;
+    }
+    .card {
+        width: 60vw;
+    }
+}

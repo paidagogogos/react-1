@@ -3,7 +3,6 @@ import Nav from './components/Nav';
 import ProductList from './components/ProductList';
 import CartList from './components/CartList';
 import Login from './components/Login';
-import Banner from './components/Banner';
 import {Routes,Route, BrowserRouter} from 'react-router-dom';
 import UserRedirects from './components/UserRedirects';
 
@@ -17,7 +16,7 @@ function App() {
         <Route path="/" element={<ProductList />} />
         <Route path="/cart" element={<CartList />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/proudct/:id" element={<UserRedirects />} />
+        <Route path="/product/:id" element={<UserRedirects />} />
       </Routes>
       </BrowserRouter>
     </div>

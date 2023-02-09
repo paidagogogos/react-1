@@ -2,6 +2,7 @@ import React from 'react';
 import './CartItem.css';
 import { deleteCart } from '../store/cart/cartSlice';
 import { useDispatch , useSelector  } from "react-redux";
+import Nav from './Nav';
 
 const CartItem = ({item}) => {
     const dispatch = useDispatch();
