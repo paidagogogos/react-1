@@ -2,13 +2,22 @@
     margin:0 1vw 10vh;
 }
 
+
 .item-image {
   width: 20vw;
   height: 25vw;
+  border-radius: 0.3rem;
     margin-bottom: 5px;
     object-fit:cover;
     transform:scale(1.0);        
     transition: transform .5s; 
+}
+
+@media screen and (max-width:640px) {
+  .item-image {width:40vw;height: 50vw;}
+  .product-item {margin:0 3vw 10vh;}
+  .item-name {width: 70vw; text-overflow:clip;}
+  
 }
 
 .item-image:hover {

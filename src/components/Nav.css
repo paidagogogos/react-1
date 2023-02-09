@@ -21,13 +21,13 @@
 
 .underline {
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.4vw;
     background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
     background-repeat: no-repeat;
     background-size: 0% 100%;
     transition: background-size 0.4s;
     color: #000;
-    letter-spacing: -0.9px;
+    letter-spacing: -0.06vw;
     cursor: pointer;
   }
 
@@ -40,8 +40,8 @@
 
 
 .fas.fa-shopping-cart {
-    padding-left: 2.5vw;
-    margin-right: 2.5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     color: #373f49;
     transition: all 0.2s
 }
@@ -51,6 +51,7 @@
 }
 
 .fas.fa-sign-out-alt {
+    margin-right: 3vw;
     color: #373f49;
     transition: all 0.2s
 }

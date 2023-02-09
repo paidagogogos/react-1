@@ -1,14 +1,14 @@
 .cart-list{
-    width: 1200px;
+    width: 80vw;
     margin: auto;
-    padding-bottom: 200px;
+    padding-bottom: 10vh;
 }
 
 .cart-list-title{
     padding: 20px 0;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .cart-empty {
